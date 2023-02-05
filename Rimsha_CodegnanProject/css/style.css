@@ -1,0 +1,258 @@
+.Festivals_display h1 {
+       margin:1em;
+       margin-top: 0px;
+       color: #707070;
+       font-weight:lighter;
+       font-style: italic;
+       font-size: 50px;
+       font-family: 'Times New Roman', Times, serif;
+       text-align: center;
+       margin-block: black;
+
+}
+
+.Festivals_display{
+       padding:1em;
+
+}
+
+    /* Navigation bar */
+
+/*.navbar{
+       height: 80px;
+       width: 90%;
+       background: white;
+}*/
+.navbar {
+       display: flex;
+       background:white;
+       position:sticky;
+       top: 0;
+       margin-bottom: 0px;
+       border-bottom: 0px;
+
+}
+.logo{
+       width: 100px;
+       height: auto;
+       padding: 20px;
+}
+.navbar ul{
+       float: right;
+       margin: 25px 100px 10px 100px;
+       font-family: 'Libre Baskerville', serif;
+}
+.navbar ul li {
+       list-style:georgian;
+       margin: 0 8px;
+       display: inline-block;
+       line-height: 80px;
+}
+.navbar ul li a{
+       text-decoration: none;
+       color: gray;
+       font-size: 15px;
+       text-align: center;
+       padding: 10px;
+
+}
+.navbar ul li a.active, .navbar ul li a:hover{
+       background-color: white;
+       color: rgb(255, 128, 0);
+       border-radius:2px;
+       padding:5px;
+}
+.navbar .title{
+       display:flex;
+       margin-left: 50px;
+       }
+
+
+       /* Message */
+.Message{
+       display:flex;
+       margin:2em;
+       width:30em;
+       margin-bottom: 0px;
+       /* background-color: red; */
+       font-weight:lighter;
+       color: #707070;
+       font-style: italic;
+       font-family: 'Times New Roman',Times,serif;
+       margin-left: 25em;
+       line-height: 45px;
+       flex-direction: column;
+}
+.Message .idk{
+       font-weight: lighter;
+       margin: auto;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+}
+/* css for line tag */
+body hr{
+       height: 2px;
+       background-color: black;
+       margin:25px;
+       margin-top: 0px;
+       border-top: 20px;
+       border-bottom: 20px;
+}
+
+
+
+/* hover overlay */
+.cover {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+}
+.cover div {
+       padding-bottom: 0;
+       margin-right: 2em;
+       margin-bottom: 0;
+}
+
+.cover .Halloween,.FourthJuly,.Easter,.Thanksgiving,.Christmas {
+       display: flex;
+       flex-direction: column;
+       color:#707070;
+}
+.cover .Halloween:hover,
+.FourthJuly:hover,
+.Easter:hover,
+.Thanksgiving:hover,
+.Christmas:hover{
+       transition: 0.25s;
+       opacity: 0.6;
+       color:rgb(255, 128, 0) ;
+       
+}
+
+.cover .overlay {
+       border: 5px;
+       margin:auto;
+       justify-content: center;
+       align-items: center;
+       padding-top: 10px;
+}
+/* latest recipies */
+.image img{
+       width:400px;
+       height:600px;
+}
+.image{
+       display: grid;
+       column-gap: 25px;
+       row-gap: 10px;
+       grid-template-columns: 400px 400px;
+       grid-template-rows: 600px 600px 600px;
+       justify-content: center;
+
+} 
+.image .text{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.image .text a{
+       text-decoration: none;
+       font-family: 'Times New Roman', Times, serif;
+       color: #707070;
+       opacity: 1;
+       font-size: 50px;
+       font-style: italic;
+}
+
+.image .text a:hover{
+       color: rgb(255, 128, 0);
+}
+
+
+
+/* Scroll Bar */
+.Hashtag{
+       display:flex;
+       overflow-x: auto;
+       margin-right:10em;
+       margin-left: 10em;
+       
+}
+.Hashtag .item{
+       min-width: 210px;
+       margin: 10px;
+       border-radius: 50%;
+       border-color: white;
+       transition:0.25s;
+       border-width: 2px;
+       cursor: pointer;
+}
+
+.Hashtag .item:hover{
+       opacity:0.6;
+}
+
+.Hashtag .item .overlay{
+       opacity: 1;
+
+}
+
+.Hashtag::-webkit-scrollbar{
+       width:0px;
+}
+
+.Hashtag .overlay{
+       opacity: 0;
+       position: relative;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       justify-content: center;
+}
+
+
+.email {
+       /* float: center; */
+       /* margin-left: 500px; */
+       font-family: 'Libre Baskerville', serif;
+       font-style: italic;
+       display: flex;
+              justify-content: center;
+              align-items: center;
+
+}
+
+input {
+       border-top-style: hidden;
+       border-right-style: hidden;
+       border-left-style: hidden;
+       border-bottom-style: groove;
+       
+}
+
+.no-outline:focus {
+       outline: none;
+}
+.button{
+       font-family: 'Libre Baskerville', serif;
+       /* border: 2px solid orange; */
+       width:max-content;
+       font-size: medium;
+       border: 3px solid rgb(255, 128, 0);
+       border-radius: 30px;
+       color: rgb(255, 128, 0);
+       padding: 15px;
+       background: white;
+       text-decoration: none;
+}
+.button:hover{
+       background:rgb(255, 128, 0);
+       color: white;
+}
+.copyright{
+       display:flex;
+       color: #707070;
+       justify-content: center;
+}
+
